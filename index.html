@@ -10,18 +10,41 @@
   <script src="js/main.js" defer></script>
 </head>
 <body>
+  <div class="bg-image"></div>
+
   <header>
     <h1>MemeFall</h1>
     <p>Make memes. Break physics.</p>
   </header>
 
+  <div class="how-to" id="how-to">
+    <button class="how-to-toggle" id="how-to-toggle" aria-label="Show help">?</button>
+    <div class="how-to-content" id="how-to-content">
+      <h3>How to Play</h3>
+      <ul>
+        <li><kbd>Type</kbd> top & bottom text</li>
+        <li><kbd>Click</kbd> <strong>Generate Meme</strong> or press <kbd>Enter</kbd></li>
+        <li><kbd>Drag</kbd> memes to throw them</li>
+        <li><kbd>Click</kbd> <strong>Chaos</strong> to fling everything</li>
+        <li>Or pick a <strong>template</strong> below → instant meme!</li>
+      </ul>
+    </div>
+  </div>
+
   <form id="meme-form">
-    <input id="top-text" type="text" placeholder="Top text" />
-    <input id="bottom-text" type="text" placeholder="Bottom text" />
+    <input id="top-text" type="text" placeholder="Top text" autocomplete="off" />
+    <input id="bottom-text" type="text" placeholder="Bottom text" autocomplete="off" />
     <button type="button" id="generate-btn">Generate Meme</button>
     <button type="button" id="chaos-btn">Chaos</button>
   </form>
 
+  <section class="templates" id="templates" aria-label="Meme templates">
+    <h2>Quick Templates</h2>
+    <div class="template-grid" id="template-grid"></div>
+  </section>
+
   <div id="meme-container"></div>
+
+
 </body>
 </html>
