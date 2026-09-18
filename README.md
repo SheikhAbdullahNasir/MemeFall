@@ -2,7 +2,7 @@
 
 Make memes. Break physics.
 
-A tiny web app for the "Make the internet funny" hackathon.
+A tiny web app for the hackathon.
 
 ## Features
 
@@ -18,10 +18,3 @@ A tiny web app for the "Make the internet funny" hackathon.
 ## Running locally
 
 Open `index.html` in a browser.
-
-## Deploying
-
-- Drag the project folder to Netlify Drop, or
-- Push to GitHub and deploy on Vercel/GitHub Pages.
-
-Submit the live URL to the hackathon.
