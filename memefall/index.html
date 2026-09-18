@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MemeFall</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
+  <script src="js/physics.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>MemeFall</h1>
+    <p>Make memes. Break physics.</p>
+  </header>
+
+  <form id="meme-form">
+    <input id="top-text" type="text" placeholder="Top text" />
+    <input id="bottom-text" type="text" placeholder="Bottom text" />
+    <button type="button" id="generate-btn">Generate Meme</button>
+    <button type="button" id="chaos-btn">Chaos</button>
+  </form>
+
+  <div id="meme-container"></div>
+</body>
+</html>
